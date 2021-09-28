@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package br.com.zup.edu;
+
+service FretesGrpcService {
+
+  rpc calcula(FreteRequest) returns (FreteResponse) {}
+}
+
+message FreteRequest {
+  string cep = 1;
+}
+
+message FreteResponse {
+  string cep = 1;
+  double valor = 2;
+}
+
+
+
+
+
+
